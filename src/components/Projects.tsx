@@ -4,28 +4,28 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Spotify Profile",
-      description: "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
-      technologies: ["React", "Styled Components", "Node.js", "Spotify API", "Express"],
+      title: "AI Astrology Advisor",
+      description: "An AI-powered astrology app that provides personalized readings and predictions. Built with Flutter and integrated with OpenAI for intelligent chart analysis and personalized guidance.",
+      technologies: ["Flutter", "OpenAI API", "Firebase", "Dart", "REST APIs"],
       github: "#",
       external: "#",
-      image: "https://images.unsplash.com/photo-1611339555312-e607c8352fd7?w=600&h=400&fit=crop"
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop"
     },
     {
-      title: "Halcyon Theme",
-      description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
-      technologies: ["VS Code", "Sublime Text", "Atom", "iTerm2", "Hyper"],
+      title: "Virtual Relationship Advisor",
+      description: "A mobile app offering AI-driven relationship advice and guidance. Features real-time chat with AI counselors, personalized recommendations, and progress tracking.",
+      technologies: ["Flutter", "Gemini AI", "Firebase", "Stripe", "Push Notifications"],
       github: "#",
       external: "#",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop"
+      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop"
     },
     {
-      title: "Integrating Algolia Search",
-      description: "Building a custom search component with Algolia's instantsearch.js and React. The search is deployed to Netlify and includes features like filtering, pagination, and more.",
-      technologies: ["Algolia", "React", "Gatsby", "Node.js"],
+      title: "Entrepreneur Network Platform",
+      description: "A networking platform connecting entrepreneurs and investors. Features user profiles, matchmaking algorithms, in-app messaging, and event management with payment integration.",
+      technologies: ["Flutter", "Firebase", "Stripe", "Cloud Functions", "Real-time Database"],
       github: "#",
       external: "#",
-      image: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&h=400&fit=crop"
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
     }
   ];
 

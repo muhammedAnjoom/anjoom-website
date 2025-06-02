@@ -1,14 +1,14 @@
 
 const About = () => {
   const technologies = [
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "React",
-    "Node.js",
-    "Python",
-    "Next.js",
-    "Tailwind CSS",
-    "PostgreSQL",
+    "Flutter",
+    "Dart",
+    "Firebase",
+    "OpenAI API",
+    "Gemini AI",
+    "Stripe",
+    "REST APIs",
+    "UI/UX Design",
   ];
 
   return (
@@ -21,17 +21,22 @@ const About = () => {
             </h2>
             <div className="text-slate-400 space-y-4 leading-relaxed">
               <p>
-                Hello! I'm Your Name, and I enjoy creating things that live on the internet. 
-                My interest in web development started back in 2018 when I decided to try 
-                editing custom themes — turns out hacking together HTML & CSS taught me a lot about web development!
+                Hello! I'm Muhammed Anjoom, a passionate mobile app developer with a strong focus on 
+                Flutter and a growing interest in AI-powered applications. With over a year of hands-on 
+                experience, I specialize in building scalable, cross-platform mobile solutions.
               </p>
               <p>
-                Fast-forward to today, and I've had the privilege of working at an advertising agency, 
-                a start-up, a huge corporation, and a student-led design studio. My main focus these days 
-                is building accessible, inclusive products and digital experiences for a variety of clients.
+                💡 I've developed and launched multiple production-grade apps—from AI-powered astrology 
+                and virtual relationship advisors to entrepreneur networking platforms. I enjoy transforming 
+                ideas into intuitive, high-performance apps with modern UI/UX and seamless API integration.
               </p>
               <p>
-                Here are a few technologies I've been working with recently:
+                🤖 Lately, I've been diving deep into AI and integrating intelligent features into mobile 
+                experiences using tools like OpenAI and Gemini AI. I believe the future of mobile lies in 
+                blending intuitive design with powerful intelligence—and that's what I strive to create.
+              </p>
+              <p>
+                Here are some technologies I've been working with:
               </p>
             </div>
             <div className="grid grid-cols-2 gap-2 mt-6">
@@ -48,7 +53,7 @@ const About = () => {
             <div className="relative z-10 rounded bg-emerald-400 transition-all duration-300 group-hover:translate-x-[-8px] group-hover:translate-y-[-8px]">
               <img
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
-                alt="Profile"
+                alt="Muhammed Anjoom"
                 className="rounded w-full h-auto grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>

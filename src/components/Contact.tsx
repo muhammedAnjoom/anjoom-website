@@ -8,11 +8,11 @@ const Contact = () => {
         </h2>
         <h3 className="text-5xl font-bold text-slate-100 mb-6">Get In Touch</h3>
         <p className="text-slate-400 text-lg leading-relaxed mb-12">
-          Although I'm not currently looking for any new opportunities, my inbox is always open. 
-          Whether you have a question or just want to say hi, I'll try my best to get back to you!
+          I'm always excited to discuss new mobile app projects, AI integrations, or collaboration opportunities. 
+          Whether you have an innovative app idea or want to chat about Flutter and AI, I'd love to hear from you!
         </p>
         <a
-          href="mailto:hello@yourname.com"
+          href="mailto:muhammedanjoom@gmail.com"
           className="inline-block border border-emerald-400 text-emerald-400 px-8 py-4 rounded text-lg hover:bg-emerald-400 hover:text-slate-900 transition-all duration-300 hover:transform hover:translate-y-[-2px]"
         >
           Say Hello
@@ -22,10 +22,10 @@ const Contact = () => {
       <footer className="mt-20 text-center">
         <div className="flex justify-center space-x-6 mb-8">
           {[
-            { name: "GitHub", url: "#" },
-            { name: "LinkedIn", url: "#" },
-            { name: "Twitter", url: "#" },
-            { name: "Instagram", url: "#" },
+            { name: "GitHub", url: "https://github.com/muhammedanjoom" },
+            { name: "LinkedIn", url: "https://linkedin.com/in/muhammedanjoom" },
+            { name: "Twitter", url: "https://twitter.com/muhammedanjoom" },
+            { name: "Portfolio", url: "#" },
           ].map((social) => (
             <a
               key={social.name}
@@ -37,7 +37,7 @@ const Contact = () => {
           ))}
         </div>
         <p className="text-slate-400 text-sm font-mono">
-          Built by Your Name
+          Built by Muhammed Anjoom
         </p>
       </footer>
     </section>

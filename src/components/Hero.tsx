@@ -10,14 +10,14 @@ const Hero = () => {
             Hi, my name is
           </p>
           <h1 className="text-5xl md:text-7xl font-bold text-slate-100 mb-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-            Your Name
+            Muhammed Anjoom
           </h1>
           <h2 className="text-4xl md:text-6xl font-bold text-slate-400 mb-8 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-            I build things for the web.
+            I build mobile apps with AI.
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in" style={{ animationDelay: "0.8s" }}>
-            I'm a software engineer specializing in building exceptional digital experiences. 
-            Currently, I'm focused on building accessible, human-centered products.
+            I'm a passionate mobile app developer specializing in Flutter and AI-powered applications. 
+            With over a year of experience, I create scalable, cross-platform solutions that deliver real-world impact.
           </p>
           <a
             href="#projects"
