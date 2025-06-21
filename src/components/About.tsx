@@ -62,7 +62,7 @@ const About = () => {
           <div className="relative group">
             <div className="relative z-10 rounded bg-emerald-400 transition-all duration-300 group-hover:translate-x-[-8px] group-hover:translate-y-[-8px]">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                src="/lovable-uploads/47caa5a7-878b-4e53-8204-7f9a77bb8d29.png"
                 alt="Muhammed Anjoom"
                 className="rounded w-full h-auto grayscale hover:grayscale-0 transition-all duration-300"
               />
