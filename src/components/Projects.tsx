@@ -1,15 +1,14 @@
-
 import { ExternalLink, Github } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
-      title: "AI Astrology Advisor",
-      description: "An AI-powered astrology app that provides personalized readings and predictions. Built with Flutter and integrated with OpenAI for intelligent chart analysis and personalized guidance.",
-      technologies: ["Flutter", "OpenAI API", "Firebase", "Dart", "REST APIs"],
+      title: "CosmicSpirit - AI Astrology Guide",
+      description: "A comprehensive AI-powered astrology application that provides personalized horoscopes, birth chart analysis, and spiritual guidance. Features daily predictions, compatibility matching, and AI-driven insights for personal growth and self-discovery.",
+      technologies: ["Flutter", "OpenAI API", "Firebase", "Dart", "Machine Learning", "Charts & Analytics"],
       github: "#",
-      external: "#",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop"
+      external: "https://play.google.com/store/apps/details?id=com.wecodelife.cosmicspirit",
+      image: "/lovable-uploads/47caa5a7-878b-4e53-8204-7f9a77bb8d29.png"
     },
     {
       title: "Virtual Relationship Advisor",
