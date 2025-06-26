@@ -5,7 +5,7 @@ const Projects = () => {
     {
       title: "CosmicSpirit: Your Personal Astrology Guide",
       description: "Unlock the mysteries of the stars with CosmicSpirit, the ultimate astrology app designed to provide accurate and insightful astrological readings. Features daily horoscopes, birth chart analysis, personalized predictions, daily affirmations, personal journal, and notifications for important astrological events.",
-      technologies: ["Flutter", "OpenAI API", "Firebase", "Dart", "Machine Learning", "Charts & Analytics"],
+      technologies: ["Flutter", "OpenAI API", "Firebase", "Dart", "Machine Learning"],
       github: "#",
       external: "https://play.google.com/store/apps/details?id=com.wecodelife.cosmicspirit",
       image: "/lovable-uploads/6a9809ff-ca03-4f54-96fb-3533a03ae1fe.png"
@@ -37,11 +37,9 @@ const Projects = () => {
         
         <div className="space-y-24">
           {projects.map((project, index) => (
-            <div key={index} className={`grid grid-cols-1 lg:grid-cols-12 gap-4 items-center ${
-              index % 2 === 1 ? 'lg:direction-rtl' : ''
-            }`}>
+            <div key={index} className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               {/* Project Image */}
-              <div className={`lg:col-span-7 ${index % 2 === 1 ? 'lg:col-start-6' : 'lg:col-start-1'}`}>
+              <div className={`lg:col-span-7 ${index % 2 === 1 ? 'lg:col-start-6 lg:order-2' : 'lg:col-start-1 lg:order-1'}`}>
                 <div className="relative group">
                   <div className="bg-emerald-400 rounded overflow-hidden">
                     <img
@@ -55,7 +53,7 @@ const Projects = () => {
               </div>
               
               {/* Project Info */}
-              <div className={`lg:col-span-5 ${index % 2 === 1 ? 'lg:col-start-1 lg:text-left' : 'lg:col-start-8 lg:text-right'} relative z-10`}>
+              <div className={`lg:col-span-5 ${index % 2 === 1 ? 'lg:col-start-1 lg:order-1' : 'lg:col-start-8 lg:order-2'} relative z-10`}>
                 <p className="text-emerald-400 text-sm font-mono mb-2">Featured Project</p>
                 <h3 className="text-2xl font-bold text-slate-100 mb-4">{project.title}</h3>
                 
@@ -63,7 +61,7 @@ const Projects = () => {
                   <p className="text-slate-400 leading-relaxed">{project.description}</p>
                 </div>
                 
-                <div className={`flex flex-wrap gap-2 mb-6 ${index % 2 === 1 ? 'lg:justify-start' : 'lg:justify-end'}`}>
+                <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.map((tech, techIndex) => (
                     <span key={techIndex} className="text-sm font-mono text-slate-400">
                       {tech}
@@ -71,7 +69,7 @@ const Projects = () => {
                   ))}
                 </div>
                 
-                <div className={`flex space-x-4 ${index % 2 === 1 ? 'lg:justify-start' : 'lg:justify-end'}`}>
+                <div className="flex space-x-4">
                   <a href={project.github} className="text-slate-400 hover:text-emerald-400 transition-colors">
                     <Github size={20} />
                   </a>
