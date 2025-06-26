@@ -13,7 +13,7 @@ const Projects = () => {
     {
       title: "Virtual Relationship Advisor",
       description: "A mobile app offering AI-driven relationship advice and guidance. Features real-time chat with AI counselors, personalized recommendations, and progress tracking.",
-      technologies: ["Flutter", "Gemini AI", "Firebase", "Stripe", "Push Notifications"],
+      technologies: ["Flutter", "Gemini AI", "Firebase", "Push Notifications"],
       github: "#",
       external: "#",
       image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop"
@@ -69,7 +69,7 @@ const Projects = () => {
                   ))}
                 </div>
                 
-                <div className="flex space-x-4">
+                <div className="flex space-x-4 ">
                   <a href={project.github} className="text-slate-400 hover:text-emerald-400 transition-colors">
                     <Github size={20} />
                   </a>
