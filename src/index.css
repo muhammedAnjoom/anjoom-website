@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,4 +95,76 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Disable AOS left and right animations */
+[data-aos="fade-left"],
+[data-aos="fade-right"],
+[data-aos="slide-left"],
+[data-aos="slide-right"],
+[data-aos="flip-left"],
+[data-aos="flip-right"],
+[data-aos="zoom-in-left"],
+[data-aos="zoom-in-right"],
+[data-aos="zoom-out-left"],
+[data-aos="zoom-out-right"] {
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+/* Override any left/right transforms to prevent horizontal movement */
+[data-aos*="left"],
+[data-aos*="right"] {
+  transform: translateY(0) !important;
+}
+
+/* Enhanced top and bottom animations with reverse support */
+[data-aos="fade-up"] {
+  transform: translateY(100px);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="fade-up"].aos-animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+[data-aos="fade-down"] {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="fade-down"].aos-animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Reverse animations for bottom to top scrolling */
+[data-aos="fade-up"].aos-animate.aos-animate-mirror {
+  transform: translateY(-100px);
+  opacity: 0;
+}
+
+[data-aos="fade-down"].aos-animate.aos-animate-mirror {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+/* Zoom animations with reverse support */
+[data-aos="zoom-in"] {
+  transform: scale(0.8);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="zoom-in"].aos-animate {
+  transform: scale(1);
+  opacity: 1;
+}
+
+[data-aos="zoom-in"].aos-animate.aos-animate-mirror {
+  transform: scale(0.8);
+  opacity: 0;
 }

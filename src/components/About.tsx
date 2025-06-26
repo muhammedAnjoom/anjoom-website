@@ -1,4 +1,3 @@
-
 const About = () => {
   const technologies = [
     "Flutter",
@@ -17,7 +16,7 @@ const About = () => {
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
+          <div data-aos="fade-up" data-aos-delay="200">
             <h2 className="text-3xl font-bold text-slate-100 mb-6">
               <span className="text-emerald-400 text-xl font-mono">01.</span> About Me
             </h2>
@@ -49,7 +48,7 @@ const About = () => {
                 Here are some technologies I've been working with:
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-2 mt-6">
+            <div className="grid grid-cols-2 gap-2 mt-6" data-aos="fade-up" data-aos-delay="400">
               {technologies.map((tech, index) => (
                 <div key={index} className="flex items-center text-slate-400">
                   <span className="text-emerald-400 mr-2">▹</span>
@@ -59,7 +58,7 @@ const About = () => {
             </div>
           </div>
           
-          <div className="relative group">
+          <div className="relative group" data-aos="zoom-in" data-aos-delay="300">
             <div className="relative z-10 rounded bg-emerald-400 transition-all duration-300 group-hover:translate-x-[-8px] group-hover:translate-y-[-8px]">
               <img
                 src="/lovable-uploads/47caa5a7-878b-4e53-8204-7f9a77bb8d29.png"

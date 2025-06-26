@@ -1,5 +1,6 @@
-
 import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
@@ -11,6 +12,15 @@ const Index = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // Initialize AOS with only top and bottom animations and mirror enabled
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false, // Allow animations to repeat
+      mirror: true, // Enable reverse animations
+      offset: 100,
+    });
+
     const checkMobile = () => {
       const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || 
                            window.innerWidth <= 768;
@@ -30,7 +40,7 @@ const Index = () => {
       <main>
         <Hero />
         <About />
-        <Projects />
+        {/* <Projects /> */}
         <Contact />
       </main>
     </div>

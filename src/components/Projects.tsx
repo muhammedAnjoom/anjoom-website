@@ -31,16 +31,16 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-slate-100 mb-12 text-center">
+        <h2 className="text-3xl font-bold text-slate-100 mb-12 text-center" data-aos="fade-up">
           <span className="text-emerald-400 text-xl font-mono">02.</span> Some Things I've Built
         </h2>
         
         <div className="space-y-24">
           {projects.map((project, index) => (
-            <div key={index} className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div key={index} className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" data-aos="fade-up" data-aos-delay={index * 200}>
               {/* Project Image */}
               <div className={`lg:col-span-7 ${index % 2 === 1 ? 'lg:col-start-6 lg:order-2' : 'lg:col-start-1 lg:order-1'}`}>
-                <div className="relative group">
+                <div className="relative group" data-aos={index % 2 === 1 ? "fade-up" : "fade-down"} data-aos-delay={index * 200 + 100}>
                   <div className="bg-emerald-400 rounded overflow-hidden">
                     <img
                       src={project.image}
@@ -53,7 +53,7 @@ const Projects = () => {
               </div>
               
               {/* Project Info */}
-              <div className={`lg:col-span-5 ${index % 2 === 1 ? 'lg:col-start-1 lg:order-1' : 'lg:col-start-8 lg:order-2'} relative z-10`}>
+              <div className={`lg:col-span-5 ${index % 2 === 1 ? 'lg:col-start-1 lg:order-1' : 'lg:col-start-8 lg:order-2'} relative z-10`} data-aos={index % 2 === 1 ? "fade-down" : "fade-up"} data-aos-delay={index * 200 + 200}>
                 <p className="text-emerald-400 text-sm font-mono mb-2">Featured Project</p>
                 <h3 className="text-2xl font-bold text-slate-100 mb-4">{project.title}</h3>
                 
