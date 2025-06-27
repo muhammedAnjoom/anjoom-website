@@ -12,7 +12,7 @@ const Contact = () => {
         </p>
         <a
           href="mailto:muhammedanjoom@gmail.com"
-          className="inline-block border border-emerald-400 text-emerald-400 px-8 py-4 rounded text-lg hover:bg-emerald-400 hover:text-slate-900 transition-all duration-300 hover:transform hover:translate-y-[-2px]"
+          className="inline-block border border-emerald-400 text-emerald-400 px-6 py-2 rounded text-base hover:bg-emerald-400 hover:text-slate-900 transition-all duration-300 hover:transform hover:translate-y-[-2px]"
           data-aos="fade-up" 
           data-aos-delay="600"
         >

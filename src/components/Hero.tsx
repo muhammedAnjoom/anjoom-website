@@ -1,9 +1,10 @@
 import { ArrowDown } from "lucide-react";
 
+
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center relative">
         <div>
           <p className="text-emerald-400 text-lg mb-4" data-aos="fade-up" data-aos-delay="200">
             Hi, my name is
@@ -26,10 +27,9 @@ const Hero = () => {
           >
             Check out my work!
           </a>
-        </div>
-        
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce" data-aos="fade-up" data-aos-delay="1200">
-          <ArrowDown className="text-slate-400" size={24} />
+          <div className="flex justify-center mt-8 animate-bounce" data-aos="fade-up" data-aos-delay="1200">
+            <ArrowDown className="text-slate-400" size={24} />
+          </div>
         </div>
       </div>
     </section>
