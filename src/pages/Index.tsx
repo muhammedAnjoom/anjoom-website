@@ -7,6 +7,7 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Navigation from "@/components/Navigation";
 import CursorTracker from "@/components/CursorTracker";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -34,7 +35,11 @@ const Index = () => {
   }, []);
 
   return (
-    <div className={`min-h-screen bg-slate-900 text-slate-300 ${!isMobile ? 'cursor-none' : ''}`}>
+    <div className={`min-h-screen bg-slate-900 text-slate-300 ${!isMobile ? 'cursor-none' : ''} relative overflow-hidden`}>
+      {/* Blurred background effect */}
+      <div className="pointer-events-none fixed inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 via-slate-800/60 to-emerald-900/30 blur-2xl scale-110" />
+      </div>
       <CursorTracker />
       <Navigation />
       <main>
@@ -43,6 +48,7 @@ const Index = () => {
         {/* <Projects /> */}
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 };

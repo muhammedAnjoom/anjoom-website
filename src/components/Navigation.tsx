@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -32,12 +31,12 @@ const Navigation = () => {
           </a>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-slate-300 hover:text-emerald-400 transition-colors duration-200 relative group"
+                className="flex items-center text-slate-300 hover:text-emerald-400 transition-colors duration-200 relative group px-4 py-2 text-base"
               >
                 {item.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-200 group-hover:w-full"></span>
@@ -45,7 +44,7 @@ const Navigation = () => {
             ))}
             <a
               href="/resume.pdf"
-              className="border border-emerald-400 text-emerald-400 px-4 py-2 rounded hover:bg-emerald-400 hover:text-slate-900 transition-all duration-200"
+              className="flex items-center border border-emerald-400 text-emerald-400 px-4 py-2 rounded hover:bg-emerald-400 hover:text-slate-900 transition-all duration-200 text-base"
             >
               Resume
             </a>
