@@ -48,7 +48,10 @@ const Index = () => {
         {/* <Projects /> */}
         <Contact />
       </main>
+      {/* <div className="w-full bg-red-300 p-4"> */}
       <Footer />
+      {/* </div> */}
+ 
     </div>
   );
 };
