@@ -22,27 +22,29 @@ const About = () => {
             </h2>
             <div className="text-slate-400 space-y-4 leading-relaxed">
               <p>
-                I'm Muhammed Anjoom, a Flutter developer from Wayanad with a passion for crafting 
-                meaningful mobile experiences that blend design, technology, and AI.
+                Hi, I'm Muhammed Anjoom, a Flutter developer from Wayanad, Kerala. I enjoy building 
+                mobile apps that are smooth, user-friendly, and helpful in everyday life.
               </p>
               <p>
-                With over a year of experience, I've built and launched a variety of Android and iOS 
-                applications—from AI-powered astrology and dating apps to business networking platforms 
-                and community-driven tools. My focus lies in delivering high-performance, scalable apps 
-                with beautiful UI/UX and real-time features using technologies like Firebase, RESTful APIs, 
-                and advanced state management (Bloc, GetX, Provider).
+                With over a year of experience, I've developed high-quality apps for both Android and iOS. 
+                I focus on clean design, strong performance, and features that truly matter to users.
               </p>
               <p>
-                I love exploring the intersection of mobile development and AI. Some of my most exciting 
-                work includes apps like CosmicSpirit (an AI-based personal astrology guide), MadLove 
-                (a dating app with a virtual relationship coach), and Genezez (a networking space for 
-                entrepreneurs). These projects have allowed me to combine creativity with technical 
-                expertise—and make apps that people genuinely love.
+                I work with technologies like Firebase, REST APIs, and state management tools like Bloc, 
+                GetX, and Provider. I'm passionate about using AI tools to create smarter apps and love 
+                staying updated by exploring new tech stacks and frameworks.
               </p>
               <p>
-                Whether I'm integrating a complex payment gateway, designing an intuitive interface, or 
-                experimenting with OpenAI and Gemini AI, I always build with care, curiosity, and a focus 
-                on real-world impact.
+                I'm also currently learning iOS development to deepen my expertise and offer more value 
+                to the people I work with.
+              </p>
+              <p>
+                If you're looking for the best mobile app developer in Kerala who blends creativity, 
+                technical skill, and real-world problem-solving, I'd love to connect with you.
+              </p>
+              <p>
+                For me, coding isn't just work—it's something I truly enjoy. I love learning, 
+                experimenting, and building apps that make a difference.
               </p>
               <p>
                 Here are some technologies I've been working with:
@@ -54,6 +56,7 @@ const About = () => {
                   <span className="text-emerald-400 mr-2">▹</span>
                   <span className="text-sm font-mono">{tech}</span>
                 </div>
+                
               ))}
             </div>
           </div>

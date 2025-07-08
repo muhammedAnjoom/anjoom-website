@@ -1,5 +1,7 @@
-import { ArrowDown } from "lucide-react";
 
+// "use client";
+import { ArrowDown } from "lucide-react";
+import { Button } from "./ui/moving-border";
 
 const Hero = () => {
   return (
@@ -13,20 +15,19 @@ const Hero = () => {
             Muhammed Anjoom
           </h1>
           <h2 className="text-4xl md:text-6xl font-bold text-slate-400 mb-8" data-aos="fade-up" data-aos-delay="600">
-            I build mobile apps with AI.
+          Building Clean Code, Fast UI, Real-World Apps.
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed" data-aos="fade-up" data-aos-delay="800">
             I'm a passionate mobile app developer specializing in Flutter and AI-powered applications. 
             With over a year of experience, I create scalable, cross-platform solutions that deliver real-world impact.
           </p>
-          <a
-            href="#projects"
-            className="inline-flex items-center border border-emerald-400 text-emerald-400 px-8 py-4 rounded text-lg hover:bg-emerald-400 hover:text-slate-900 transition-all duration-300 hover:transform hover:translate-y-[-2px]"
-            data-aos="fade-up" 
-            data-aos-delay="1000"
-          >
-            Check out my work!
-          </a>
+          <div data-aos="fade-up" data-aos-delay="1000">
+          <Button
+       borderRadius="1.75rem"
+        >
+       Check out my work!
+      </Button>
+          </div>
           <div className="flex justify-center mt-8 animate-bounce" data-aos="fade-up" data-aos-delay="1200">
             <ArrowDown className="text-slate-400" size={24} />
           </div>

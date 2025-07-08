@@ -42,12 +42,12 @@ const Navigation = () => {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-200 group-hover:w-full"></span>
               </a>
             ))}
-            <a
+            {/* <a
               href="/resume.pdf"
               className="flex items-center border border-emerald-400 text-emerald-400 px-4 py-2 rounded hover:bg-emerald-400 hover:text-slate-900 transition-all duration-200 text-base"
             >
               Resume
-            </a>
+            </a> */}
           </div>
 
           {/* Mobile menu button */}
