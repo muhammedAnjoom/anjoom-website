@@ -13,7 +13,7 @@ const Footer = () => (
     </span>
     <span className="ml-2">
       <a
-        href="https://your-portfolio-link.com"
+        href="#"
         target="_blank"
         rel="noopener noreferrer"
         className="text-emerald-300 hover:text-emerald-400 underline underline-offset-2 transition-colors"

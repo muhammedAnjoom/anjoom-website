@@ -1,3 +1,5 @@
+import { Button } from "./ui/moving-border";
+
 const Contact = () => {
   return (
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
@@ -7,17 +9,26 @@ const Contact = () => {
         </h2>
         <h3 className="text-5xl font-bold text-slate-100 mb-6" data-aos="fade-up" data-aos-delay="200">Get In Touch</h3>
         <p className="text-slate-400 text-lg leading-relaxed mb-12" data-aos="fade-up" data-aos-delay="400">
-          I'm always excited to discuss new mobile app projects, AI integrations, or collaboration opportunities. 
-          Whether you have an innovative app idea or want to chat about Flutter and AI, I'd love to hear from you!
+        I'm always open to new mobile app projects, creative ideas, or collaboration opportunities. Whether you have an app concept in mind or just want to connect over Flutter or mobile development, I’d love to hear from you!
         </p>
-        <a
+        {/* <a
           href="mailto:muhammedanjoom@gmail.com"
           className="inline-block border border-emerald-400 text-emerald-400 px-6 py-2 rounded text-base hover:bg-emerald-400 hover:text-slate-900 transition-all duration-300 hover:transform hover:translate-y-[-2px]"
           data-aos="fade-up" 
           data-aos-delay="600"
         >
           Say Hello
-        </a>
+        </a> */}
+          <div data-aos="fade-up" data-aos-delay="1000">
+            <a href="https://wa.me/9526020931"
+            >
+         <Button
+       borderRadius="1.75rem"
+        >
+      Say Hello
+      </Button>
+      </a>
+      </div>
       </div>
       
       <footer className="mt-20 text-center">
