@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Space+Grotesk:wght@500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -94,6 +96,155 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(34px);
+  transition:
+    opacity 700ms ease,
+    transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.magic-shiny-text {
+  background:
+    linear-gradient(
+      110deg,
+      currentColor 0%,
+      currentColor 38%,
+      rgba(255, 255, 255, 0.95) 50%,
+      currentColor 62%,
+      currentColor 100%
+    );
+  background-clip: text;
+  background-size: var(--shiny-width) 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: magic-shiny-text 3.2s linear infinite;
+}
+
+.magic-gradient-text {
+  background: linear-gradient(
+    90deg,
+    var(--gradient-from),
+    var(--gradient-to),
+    var(--gradient-from)
+  );
+  background-clip: text;
+  background-size: 220% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: magic-gradient-text var(--gradient-speed) ease-in-out infinite;
+}
+
+.magic-border-beam {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.magic-border-beam::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: var(--beam-border-width);
+  border-radius: inherit;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 245deg,
+    var(--beam-from) 285deg,
+    var(--beam-to) 315deg,
+    transparent 350deg
+  );
+  animation: magic-border-spin var(--beam-duration) linear infinite;
+  animation-delay: var(--beam-delay);
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+}
+
+.magic-border-beam-reverse::after {
+  animation-direction: reverse;
+}
+
+.magic-grid-pulse {
+  animation: magic-grid-pulse 4.8s ease-in-out infinite;
+  opacity: 0;
+}
+
+.magic-grid-pulse-delayed {
+  animation-delay: 1.4s;
+}
+
+.magic-grid-pulse-slow {
+  animation-delay: 2.6s;
+  animation-duration: 6.5s;
+}
+
+@keyframes magic-shiny-text {
+  0% {
+    background-position: -140% 0;
+  }
+  100% {
+    background-position: 240% 0;
+  }
+}
+
+@keyframes magic-gradient-text {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes magic-border-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes magic-grid-pulse {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  45%,
+  55% {
+    opacity: 0.55;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .magic-shiny-text,
+  .magic-gradient-text,
+  .magic-border-beam::after,
+  .magic-grid-pulse {
+    animation: none;
   }
 }
 

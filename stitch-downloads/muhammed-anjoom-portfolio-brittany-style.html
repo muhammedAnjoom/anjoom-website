@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Muhammed Anjoom | Software Engineer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#3c4946",
+                        "secondary-fixed": "#d8e3fb",
+                        "outline": "#6c7a76",
+                        "inverse-surface": "#2f3131",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#eeeeee",
+                        "surface-tint": "#006b5e",
+                        "primary-fixed-dim": "#4ddcc6",
+                        "on-primary-fixed": "#00201b",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#d4e4fa",
+                        "on-secondary-container": "#586377",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f3f3f4",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f0f1f1",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#b9c8de",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#4e5d70",
+                        "surface-variant": "#e2e2e2",
+                        "primary-fixed": "#6ef9e2",
+                        "secondary": "#545f73",
+                        "surface-dim": "#dadada",
+                        "secondary-container": "#d5e0f8",
+                        "tertiary": "#516072",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "on-tertiary-fixed-variant": "#39485a",
+                        "inverse-primary": "#4ddcc6",
+                        "on-primary-container": "#00675b",
+                        "tertiary-container": "#c7d6ec",
+                        "outline-variant": "#bbcac5",
+                        "on-primary-fixed-variant": "#005047",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#bcc7de",
+                        "on-secondary-fixed": "#111c2d",
+                        "on-background": "#1a1c1c",
+                        "primary": "#006b5e",
+                        "surface-bright": "#f9f9f9",
+                        "on-surface": "#1a1c1c",
+                        "primary-container": "#5eead4",
+                        "on-tertiary-fixed": "#0d1c2d",
+                        "background": "#f9f9f9",
+                        "surface": "#f9f9f9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "content_max_width": "1200px",
+                        "element_margin": "1.5rem",
+                        "gap_compact": "0.75rem",
+                        "section_padding": "6rem",
+                        "sidebar_width": "25rem"
+                    },
+                    "fontFamily": {
+                        "h1": ["Space Grotesk"],
+                        "h2": ["Space Grotesk"],
+                        "nav-link": ["Space Grotesk"],
+                        "mono-label": ["Space Grotesk"],
+                        "body-sm": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "h1": ["48px", {"lineHeight": "1", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+                        "h2": ["18px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "nav-link": ["12px", {"lineHeight": "1", "letterSpacing": "0.15em", "fontWeight": "700"}],
+                        "mono-label": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-sm": ["14px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "body-lg": ["15px", {"lineHeight": "1.7", "letterSpacing": "0", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+            overflow: hidden;
+        }
+        .scroll-container::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+        .scroll-container {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .project-card:hover {
+            background-color: rgba(0, 107, 94, 0.03);
+        }
+    </style>
+<style>
+    .group.active .nav-indicator {
+        width: 4rem !important;
+        background-color: #006b5e !important;
+    }
+    .group.active .nav-text {
+        color: #1a1c1c !important;
+    }
+</style></head>
+<body class="font-body-lg text-on-surface">
+<div class="flex h-screen w-full">
+<!-- Sidebar Navigation (SideNavBar) -->
+<aside class="fixed top-0 left-0 h-screen w-[25rem] bg-background flex flex-col justify-between py-24 px-12 border-r border-outline-variant"><div class="mb-8 w-24 h-24 rounded-full overflow-hidden border-2 border-primary/20">
+<img alt="Alex Developer" class="w-full h-full object-cover" src="https://placeholder.pics/svg/300"/>
+</div>
+<div class="flex flex-col">
+<div class="mb-12"><h1 class="text-4xl font-bold tracking-tight text-on-surface sm:text-5xl">
+<a href="/">Alex Developer</a>
+</h1>
+<h2 class="mt-3 text-lg font-medium tracking-tight text-on-surface sm:text-xl">Senior Software Engineer</h2>
+<p class="mt-4 max-w-xs leading-normal text-on-surface-variant text-body-sm">
+    I build accessible, inclusive products and digital experiences for the web.
+</p></div>
+<nav class="flex flex-col gap-6 items-start mt-12">
+<a class="group flex items-center py-1 active" href="#about">
+<span class="nav-indicator mr-4 h-px w-8 bg-outline-variant transition-all group-hover:w-16 group-hover:bg-primary group-focus-visible:w-16 group-focus-visible:bg-primary motion-reduce:transition-none"></span>
+<span class="nav-text text-xs font-bold uppercase tracking-widest text-on-surface-variant group-hover:text-primary group-focus-visible:text-primary">About</span>
+</a>
+<a class="group flex items-center py-1" href="#experience">
+<span class="nav-indicator mr-4 h-px w-8 bg-outline-variant transition-all group-hover:w-16 group-hover:bg-primary group-focus-visible:w-16 group-focus-visible:bg-primary motion-reduce:transition-none"></span>
+<span class="nav-text text-xs font-bold uppercase tracking-widest text-on-surface-variant group-hover:text-primary group-focus-visible:text-primary">Experience</span>
+</a>
+<a class="group flex items-center py-1" href="#projects">
+<span class="nav-indicator mr-4 h-px w-8 bg-outline-variant transition-all group-hover:w-16 group-hover:bg-primary group-focus-visible:w-16 group-focus-visible:bg-primary motion-reduce:transition-none"></span>
+<span class="nav-text text-xs font-bold uppercase tracking-widest text-on-surface-variant group-hover:text-primary group-focus-visible:text-primary">Projects</span>
+</a>
+</nav>
+</div>
+<div class="flex flex-col gap-8">
+<a class="group inline-flex items-center gap-2 font-mono-label text-nav-link uppercase text-primary transition-all duration-300" href="#">
+                    View Full Résumé
+                    <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" data-icon="arrow_outward">arrow_outward</span>
+</a>
+<div class="flex gap-8 items-center border-t border-outline-variant pt-6">
+<a class="text-on-surface-variant hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="link">link</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="ml-[25rem] w-full h-screen overflow-y-auto scroll-container snap-y snap-proximity">
+<div class="max-w-[850px] mx-auto py-section_padding space-y-48 px-32">
+<!-- About Section -->
+<section class="snap-start" id="about">
+<div class="md:hidden mb-8">
+<h2 class="font-nav-link text-nav-link uppercase text-on-surface tracking-widest mb-4">About</h2>
+</div>
+<div class="space-y-4 text-on-surface-variant font-body-lg text-body-lg">
+<p>
+                            Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled headfirst into the rabbit hole of coding and web design. Fast-forward to today, and I’ve had the privilege of building software for an <span class="text-on-surface font-semibold">advertising agency</span>, a <span class="text-on-surface font-semibold">start-up</span>, and a <span class="text-on-surface font-semibold">huge corporation</span>.
+                        </p>
+<p>
+                            My main focus these days is building products and leading projects for our clients at <span class="text-on-surface font-semibold">Upstatement</span>. In my free time, I've also been busy developing tools like <span class="text-on-surface font-semibold">Klaviyo's Email Builder</span> and various open-source plugins.
+                        </p>
+<p>
+                            When I’m not at the computer, I’m usually rock climbing, reading, or hanging out with my dog, Pepper.
+                        </p>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="snap-start" id="experience">
+<div class="md:hidden mb-8">
+<h2 class="font-nav-link text-nav-link uppercase text-on-surface tracking-widest mb-4">Experience</h2>
+</div>
+<div class="flex flex-col gap-12">
+<!-- Job 1 -->
+<div class="group grid grid-cols-8 gap-4 transition-all hover:opacity-100 opacity-80 cursor-default">
+<header class="col-span-2 font-mono-label text-mono-label text-outline uppercase pt-1">
+                                2021 — Present
+                            </header>
+<div class="col-span-6">
+<h3 class="font-h2 text-h2 text-on-surface group-hover:text-primary transition-colors flex items-center gap-1">
+                                    Senior Engineer · Upstatement
+                                    <span class="material-symbols-outlined text-sm group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" data-icon="north_east">north_east</span>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 mb-4">
+                                    Build and maintain critical components used to construct Apple’s documentation site. Work closely with cross-functional teams, including designers, engineers, and product managers.
+                                </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-low text-on-secondary-fixed-variant rounded-full font-mono-label text-[11px] uppercase">React</span>
+<span class="px-3 py-1 bg-surface-container-low text-on-secondary-fixed-variant rounded-full font-mono-label text-[11px] uppercase">TypeScript</span>
+<span class="px-3 py-1 bg-surface-container-low text-on-secondary-fixed-variant rounded-full font-mono-label text-[11px] uppercase">SCSS</span>
+</div>
+</div>
+</div>
+<!-- Job 2 -->
+<div class="group grid grid-cols-8 gap-4 transition-all hover:opacity-100 opacity-80 cursor-default">
+<header class="col-span-2 font-mono-label text-mono-label text-outline uppercase pt-1">
+                                2018 — 2021
+                            </header>
+<div class="col-span-6">
+<h3 class="font-h2 text-h2 text-on-surface group-hover:text-primary transition-colors flex items-center gap-1">
+                                    UI Engineer · Klaviyo
+                                    <span class="material-symbols-outlined text-sm group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" data-icon="north_east">north_east</span>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 mb-4">
+                                    Developed and maintained components for the company's design system. Contributed to the development of the new email editor.
+                                </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-low text-on-secondary-fixed-variant rounded-full font-mono-label text-[11px] uppercase">Vue.js</span>
+<span class="px-3 py-1 bg-surface-container-low text-on-secondary-fixed-variant rounded-full font-mono-label text-[11px] uppercase">JavaScript</span>
+<span class="px-3 py-1 bg-surface-container-low text-on-secondary-fixed-variant rounded-full font-mono-label text-[11px] uppercase">Design Systems</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="snap-start" id="projects">
+<div class="md:hidden mb-8">
+<h2 class="font-nav-link text-nav-link uppercase text-on-surface tracking-widest mb-4">Projects</h2>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Project 1 -->
+<div class="project-card py-4 transition-all cursor-pointer group border-b border-outline-variant last:border-0">
+<div class="flex items-start gap-4">
+<div class="flex-1">
+<h3 class="font-h2 text-h2 text-on-surface group-hover:text-primary transition-colors flex items-center gap-1 mb-1">
+                                        Build a Spotify Playlist
+                                        <span class="material-symbols-outlined text-[16px]" data-icon="link">link</span>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">
+                                        An app that generates a Spotify playlist based on a user's prompt using the OpenAI API.
+                                    </p>
+<div class="flex flex-wrap gap-3">
+<span class="font-mono-label text-[11px] uppercase tracking-wider text-primary font-bold">Flutter</span>
+<span class="font-mono-label text-[11px] uppercase tracking-wider text-primary font-bold">Firebase</span>
+<span class="font-mono-label text-[11px] uppercase tracking-wider text-primary font-bold">OpenAI</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="project-card py-4 transition-all cursor-pointer group border-b border-outline-variant last:border-0">
+<div class="flex items-start gap-4">
+<div class="flex-1">
+<h3 class="font-h2 text-h2 text-on-surface group-hover:text-primary transition-colors flex items-center gap-1 mb-1">
+                                        Developer Portfolio Template
+                                        <span class="material-symbols-outlined text-[16px]" data-icon="link">link</span>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">
+                                        A minimalist, highly customizable portfolio template for software engineers.
+                                    </p>
+<div class="flex flex-wrap gap-3">
+<span class="font-mono-label text-[11px] uppercase tracking-wider text-primary font-bold">Next.js</span>
+<span class="font-mono-label text-[11px] uppercase tracking-wider text-primary font-bold">Tailwind CSS</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Reference Image Section -->
+</div>
+</section>
+<!-- Footer (Footer Component) -->
+<footer class="w-full border-t border-outline-variant mt-element_margin py-gap_compact flex flex-col gap-2 max-w-content_max_width">
+<p class="font-mono-label text-mono-label text-on-surface-variant opacity-80">
+                        © 2024 Alex Dev. Built with Tailwind CSS and Inter.
+                    </p>
+<div class="flex gap-4">
+<a class="font-mono-label text-mono-label text-on-surface-variant hover:text-primary transition-colors" href="#">GitHub</a>
+<a class="font-mono-label text-mono-label text-on-surface-variant hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="font-mono-label text-mono-label text-on-surface-variant hover:text-primary transition-colors" href="#">Codepen</a>
+</div>
+</footer>
+</div>
+</main>
+</div>
+</body></html>
